@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<!-- Change this title per customer -->
+<title>Nice Game! Pickleball Club — Book a Court</title>
+<style>
+  html,body{height:100%;margin:0;padding:0;background:#F3F6F4}
+  #app{position:fixed;inset:0;width:100%;height:100%;border:0;display:block}
+  /* simple branded loading splash, hidden once the app loads */
+  #load{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+        background:#F3F6F4;color:#15455F;font-family:system-ui,-apple-system,sans-serif;z-index:2}
+  #load .dot{width:38px;height:38px;border:4px solid #cdd5ce;border-top-color:#15455F;border-radius:50%;
+             animation:sp .8s linear infinite;margin-bottom:14px}
+  #load b{font-size:15px;font-weight:700}
+  @keyframes sp{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+  <div id="load"><div class="dot"></div><b>Loading…</b></div>
+
+  <!-- PASTE YOUR APPS SCRIPT /exec URL BETWEEN THE QUOTES BELOW -->
+  <iframe id="app"
+          src="https://script.google.com/macros/s/AKfycbwGvMYtwSZyX3PqctEoKmtiCEaQnX-a_UFXWMUT3Newl7aKk-oGshZPOBC8188YV50_wA/exec"
+          allow="clipboard-write; clipboard-read"
+          onload="var l=document.getElementById('load'); if(l) l.style.display='none';"></iframe>
+</body>
+</html>
